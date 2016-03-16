@@ -8,6 +8,17 @@ public class Person
 	String email;
 	List<Skill> skillSet;
 
+	public Person()
+	{
+
+	}
+
+	public Person(String name, String email)
+	{
+		this.name = name;
+		this.email = email;
+	}
+
 	public String getName()
 	{
 		return name;
@@ -36,5 +47,10 @@ public class Person
 	public void setSkillSet(List<Skill> skillSet)
 	{
 		this.skillSet = skillSet;
+	}
+
+	public void addSkill(Skill skill)
+	{
+
 	}
 }
