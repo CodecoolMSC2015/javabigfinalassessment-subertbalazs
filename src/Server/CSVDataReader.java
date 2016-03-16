@@ -1,8 +1,9 @@
 package Server;
 
 import java.util.List;
+import java.util.Set;
 
-public class CSVDataReader
+public class CSVDataReader extends DataReader
 {
 	String csvFilePath;
 	List<Person> persons;
@@ -12,9 +13,9 @@ public class CSVDataReader
 		this.csvFilePath = csvFilePath;
 	}
 
-	public List<Person> getPersons()
+	public Set<Person> getPersons()
 	{
-		return persons;
+		return (Set<Person>) persons;
 	}
 
 }
