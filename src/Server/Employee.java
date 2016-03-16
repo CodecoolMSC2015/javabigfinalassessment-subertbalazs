@@ -1,6 +1,6 @@
 package Server;
 
-public class Employee
+public class Employee extends Person
 {
 	int Salary;
 	String jobTitle;
